@@ -21,7 +21,7 @@ export default function Transformation() {
             <span className={styles.colTitle}>{t.transformation.result}</span>
           </div>
           {t.transformationRows.map((r, i) => (
-            <div key={i} className={`${styles.row} reveal reveal-delay-${Math.min(i + 1, 5)}`}>
+            <div key={i} className={styles.row}>
               <span className={styles.current}>{r.current}</span>
               <span className={styles.arrow}>→</span>
               <span className={styles.result}>{r.result}</span>

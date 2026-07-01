@@ -20,7 +20,7 @@ export default function Solution() {
           </div>
           <div ref={statsRef} className={`${styles.stats} reveal`}>
             {t.solutionCards.map((c, i) => (
-              <div key={i} className={`${styles.statCard} reveal reveal-delay-${i + 1}`}>
+              <div key={i} className={styles.statCard}>
                 <span className={styles.statValue}>{c.value}</span>
                 <span className={styles.statLabel}>{c.label}</span>
               </div>

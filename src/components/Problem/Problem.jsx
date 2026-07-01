@@ -18,7 +18,7 @@ export default function Problem() {
 
         <div ref={gridRef} className={`${styles.grid} reveal`}>
           {t.problemCards.map((p, i) => (
-            <article key={i} className={`${styles.card} reveal reveal-delay-${i + 1}`}>
+            <article key={i} className={styles.card}>
               <span className={styles.icon}>{p.icon}</span>
               <h3 className={styles.cardTitle}>{p.title}</h3>
               <p className={styles.cardDesc}>{p.desc}</p>

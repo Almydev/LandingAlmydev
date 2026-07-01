@@ -17,7 +17,7 @@ export default function Process() {
 
         <div ref={gridRef} className={`${styles.grid} reveal`}>
           {t.processSteps.map((s, i) => (
-            <div key={i} className={`${styles.step} reveal reveal-delay-${i + 1}`}>
+            <div key={i} className={styles.step}>
               <span className={styles.num}>{s.num}</span>
               <div className={styles.line} />
               <h3 className={styles.stepTitle}>{s.title}</h3>

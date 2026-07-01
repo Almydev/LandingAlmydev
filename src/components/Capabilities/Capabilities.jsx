@@ -18,7 +18,7 @@ export default function Capabilities() {
 
         <div ref={gridRef} className={`${styles.grid} reveal`}>
           {t.capabilitiesList.map((c, i) => (
-            <article key={i} className={`${styles.card} reveal reveal-delay-${i + 1}`}>
+            <article key={i} className={styles.card}>
               <span className={styles.number}>0{i + 1}</span>
               <h3 className={styles.cardTitle}>{c.title}</h3>
               <p className={styles.cardDesc}>{c.desc}</p>

@@ -18,7 +18,7 @@ export default function Areas() {
 
         <div ref={gridRef} className={`${styles.grid} reveal`}>
           {t.areasList.map((a, i) => (
-            <div key={i} className={`${styles.tag} reveal reveal-delay-${Math.min(i + 1, 5)}`} data-tip={t.areasDesc[i]}>{a}</div>
+            <div key={i} className={styles.tag} data-tip={t.areasDesc[i]}>{a}</div>
           ))}
         </div>
       </div>

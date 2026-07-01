@@ -26,7 +26,7 @@ export default function Philosophy() {
 
         <div ref={valuesRef} className={`${styles.values} reveal`}>
           {t.values.map((v, i) => (
-            <div key={i} className={`${styles.valueItem} reveal reveal-delay-${i + 1}`}>
+            <div key={i} className={styles.valueItem}>
               <span className={styles.valueDot} />
               <span className={styles.valueText}>{v}</span>
             </div>
