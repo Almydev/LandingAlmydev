@@ -15,7 +15,7 @@ export default function TechStack() {
 
         <div className={styles.grid}>
           {t.techList.map((tech, i) => (
-            <div key={i} className={styles.chip}>{tech}</div>
+            <div key={i} className={styles.chip} data-tip={t.techDesc[i]}>{tech}</div>
           ))}
         </div>
       </div>

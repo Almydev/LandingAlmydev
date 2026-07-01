@@ -15,7 +15,7 @@ export default function Areas() {
 
         <div className={styles.grid}>
           {t.areasList.map((a, i) => (
-            <div key={i} className={styles.tag}>{a}</div>
+            <div key={i} className={styles.tag} data-tip={t.areasDesc[i]}>{a}</div>
           ))}
         </div>
       </div>
