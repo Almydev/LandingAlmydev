@@ -7,8 +7,11 @@ export default function Philosophy() {
   return (
     <section id="filosofia" className={`section ${styles.section}`}>
       <div className="container">
-        <div className={styles.content}>
+        <div className={styles.header}>
           <span className="section-label">{t.philosophy.label}</span>
+        </div>
+
+        <div className={styles.content}>
           <blockquote className={styles.quote}>
             {t.philosophy.quote1}
             <span className={styles.emphasis}>{t.philosophy.quote2}</span>

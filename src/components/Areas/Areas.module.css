@@ -14,21 +14,22 @@
 }
 
 .tag {
-  padding: 12px 24px;
+  padding: 14px 28px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 100px;
+  border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
   position: relative;
   cursor: default;
 }
 
 .tag:hover {
-  border-color: rgba(59, 130, 246, 0.4);
-  color: var(--text-primary);
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(59, 130, 246, 0.06);
 }
 
 .tag::after {

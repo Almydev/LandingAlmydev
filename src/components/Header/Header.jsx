@@ -26,7 +26,9 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#" className={styles.logo}>ALMYDEV</a>
+        <a href="#" className={styles.logo}>
+          <img src="https://raw.githubusercontent.com/Almydev/Almydev/main/assets/logobg.png" alt="ALMYDEV" className={styles.logoImg} />
+        </a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map((l) => (
