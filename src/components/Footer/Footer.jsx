@@ -14,6 +14,7 @@ export default function Footer() {
           <a href="#capacidades" className={styles.link}>{t.nav.capacidades}</a>
           <a href="#areas" className={styles.link}>{t.nav.areas}</a>
           <a href="#filosofia" className={styles.link}>{t.nav.filosofia}</a>
+          <a href="#contacto" className={styles.link}>{t.nav.contacto}</a>
         </div>
 
         <div className={styles.links}>

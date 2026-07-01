@@ -21,6 +21,7 @@ export default function Header() {
     { href: '#capacidades', label: t.nav.capacidades },
     { href: '#areas', label: t.nav.areas },
     { href: '#filosofia', label: t.nav.filosofia },
+    { href: '#contacto', label: t.nav.contacto },
   ]
 
   return (

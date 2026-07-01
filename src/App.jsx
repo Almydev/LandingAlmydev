@@ -8,6 +8,7 @@ import Process from './components/Process/Process'
 import Areas from './components/Areas/Areas'
 import TechStack from './components/TechStack/TechStack'
 import Philosophy from './components/Philosophy/Philosophy'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Areas />
         <TechStack />
         <Philosophy />
+        <Contact />
       </main>
       <Footer />
     </>
