@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
         <div className={styles.content}>
           {t.hero.badge && <span className={styles.badge}>{t.hero.badge}</span>}
-          <h1 className={styles.title}>
+            <h1 className={styles.title}>
             {t.hero.title}{' '}
             <span className={styles.highlight}>{t.hero.highlight}</span>
           </h1>
