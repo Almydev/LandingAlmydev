@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '../../context/ThemeContext.jsx'
 import { useI18n } from '../../context/I18nContext.jsx'
-import { useUI } from '../../context/UIContext.jsx'
 import styles from './Header.module.css'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
-  const { menuOpen, setMenuOpen } = useUI()
+  const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const { lang, toggleLang, t } = useI18n()
 
