@@ -1,10 +1,8 @@
 import { useState } from 'react'
 import { useI18n } from '../../context/I18nContext.jsx'
 import useScrollReveal from '../../hooks/useScrollReveal.js'
+import { sendContactMessage } from '../../services/contactService.js'
 import styles from './Contact.module.css'
-
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
-const FORM_URL = `${API_BASE}/contact`
 
 export default function Contact() {
   const { t, lang } = useI18n()
@@ -22,9 +20,12 @@ export default function Contact() {
     setStatus('sending')
     const data = new FormData(e.target)
     try {
-      const res = await fetch(FORM_URL, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
-      if (res.ok) setStatus('sent')
-      else setStatus('error')
+      await sendContactMessage({
+        nombre: data.get('name'),
+        email: data.get('email'),
+        mensaje: data.get('message'),
+      })
+      setStatus('sent')
     } catch {
       setStatus('error')
     }

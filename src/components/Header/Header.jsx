@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTheme } from '../../context/ThemeContext.jsx'
 import { useI18n } from '../../context/I18nContext.jsx'
 import styles from './Header.module.css'
-import logoImg from '../../assets/logobg.png'
+import logoImg from '../../assets/logobg.webp'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
