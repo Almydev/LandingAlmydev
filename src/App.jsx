@@ -1,3 +1,5 @@
+import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Problem from './components/Problem/Problem'
@@ -10,8 +12,10 @@ import TechStack from './components/TechStack/TechStack'
 import Philosophy from './components/Philosophy/Philosophy'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import ConsentBanner from './components/ConsentBanner/ConsentBanner'
+import LegalPage from './pages/legal/LegalPage'
 
-function App() {
+function Landing() {
   return (
     <>
       <Header />
@@ -28,6 +32,33 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ConsentBanner />
+    </>
+  )
+}
+
+function Legal({ docKey }) {
+  return (
+    <>
+      <Header />
+      <LegalPage docKey={docKey} />
+      <Footer />
+      <ConsentBanner />
+    </>
+  )
+}
+
+function App() {
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/privacidad" element={<Legal docKey="privacy" />} />
+        <Route path="/terminos" element={<Legal docKey="terms" />} />
+        <Route path="/cookies" element={<Legal docKey="cookies" />} />
+        <Route path="*" element={<Landing />} />
+      </Routes>
     </>
   )
 }

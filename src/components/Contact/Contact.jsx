@@ -3,16 +3,22 @@ import { useI18n } from '../../context/I18nContext.jsx'
 import useScrollReveal from '../../hooks/useScrollReveal.js'
 import styles from './Contact.module.css'
 
-const FORM_URL = 'https://formspree.io/f/xxxxxxx'
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+const FORM_URL = `${API_BASE}/contact`
 
 export default function Contact() {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   const headerRef = useScrollReveal()
   const formRef = useScrollReveal()
   const [status, setStatus] = useState('idle')
+  const [consent, setConsent] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!consent) {
+      setStatus('consent')
+      return
+    }
     setStatus('sending')
     const data = new FormData(e.target)
     try {
@@ -49,6 +55,19 @@ export default function Contact() {
             <textarea id="message" name="message" rows={5} required className={styles.textarea} placeholder={t.contact.message} />
           </div>
 
+          <div className={styles.consent}>
+            <label className={styles.consentLabel}>
+              <input
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className={styles.consentInput}
+              />
+              <span>{t.contact.consent} <a href="/privacidad" className={styles.consentLink}>{t.contact.privacy}</a>.</span>
+            </label>
+          </div>
+
+          {status === 'consent' && <p className={styles.error}>{t.contact.consentError}</p>}
           {status === 'sent' && <p className={styles.success}>{t.contact.sent}</p>}
           {status === 'error' && <p className={styles.error}>{t.contact.error}</p>}
 

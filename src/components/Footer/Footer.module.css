@@ -65,10 +65,28 @@
 
 .bottomInner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 0.82rem;
   color: var(--text-muted);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.legalLink {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.legalLink:hover {
+  color: var(--accent);
 }
 
 .whatsappFloat {

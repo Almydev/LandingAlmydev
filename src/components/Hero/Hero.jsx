@@ -1,8 +1,7 @@
 import { useI18n } from '../../context/I18nContext.jsx'
 import useScrollReveal from '../../hooks/useScrollReveal.js'
 import styles from './Hero.module.css'
-
-const banner = 'https://raw.githubusercontent.com/Almydev/Almydev/main/assets/banner.png'
+import banner from '../../assets/banner.png'
 
 export default function Hero() {
   const { t } = useI18n()

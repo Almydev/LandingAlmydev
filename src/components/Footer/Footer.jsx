@@ -48,6 +48,11 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className={`container ${styles.bottomInner}`}>
           <span>&copy; {new Date().getFullYear()} ALMYDEV. {t.footer.rights}</span>
+          <div className={styles.legalLinks}>
+            <a href="/privacidad" className={styles.legalLink}>{t.legal.privacy}</a>
+            <a href="/terminos" className={styles.legalLink}>{t.legal.terms}</a>
+            <a href="/cookies" className={styles.legalLink}>{t.legal.cookies}</a>
+          </div>
         </div>
       </div>
 

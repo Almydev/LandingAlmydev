@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { useTheme } from '../../context/ThemeContext.jsx'
 import { useI18n } from '../../context/I18nContext.jsx'
 import styles from './Header.module.css'
+import logoImg from '../../assets/logobg.png'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const { lang, toggleLang, t } = useI18n()
+  const location = useLocation()
+  const onHome = location.pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -27,15 +31,15 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#" className={styles.logo}>
-          <img src="https://raw.githubusercontent.com/Almydev/Almydev/main/assets/logobg.png" alt="ALMYDEV" className={styles.logoImg} />
-        </a>
+        <Link to="/" className={styles.logo} onClick={() => setMenuOpen(false)}>
+          <img src={logoImg} alt="ALMYDEV" className={styles.logoImg} />
+        </Link>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className={styles.link} onClick={() => setMenuOpen(false)}>
+            <Link key={l.href} to={onHome ? l.href : `/${l.href}`} className={styles.link} onClick={() => setMenuOpen(false)}>
               {l.label}
-            </a>
+            </Link>
           ))}
           <div className={styles.toggles}>
             <button onClick={toggleLang} className={styles.toggleBtn} aria-label={lang === 'es' ? 'Inglés' : 'Español'}>
