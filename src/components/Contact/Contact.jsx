@@ -26,6 +26,8 @@ export default function Contact() {
         mensaje: data.get('message'),
       })
       setStatus('sent')
+      e.target.reset()
+      setConsent(false)
     } catch {
       setStatus('error')
     }
