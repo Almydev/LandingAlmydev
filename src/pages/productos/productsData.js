@@ -1,10 +1,10 @@
 export const PRODUCTS = [
   {
-    slug: 'control-gastos',
+    slug: 'gestion-financiera',
     status: 'available',
-    url: 'https://saascontrolgastos.vercel.app',
+    url: 'https://saasgestionfinanciera.vercel.app',
     es: {
-      name: 'Control de Gastos',
+      name: 'Gestión Financiera',
       tagline: 'Registra, aprueba y exporta los gastos de tu empresa desde un solo lugar.',
       description: 'Olvídate de las hojas de cálculo y de los recibos perdidos: tu equipo registra los gastos desde el celular, tú los apruebas con un clic y exportas reportes listos para tu contador.',
       features: [
@@ -19,7 +19,7 @@ export const PRODUCTS = [
       price: 'Desde $29.000 COP/mes · Prueba gratis 14 días · Sin tarjeta',
     },
     en: {
-      name: 'Expense Control',
+      name: 'Financial Management',
       tagline: 'Record, approve and export your company expenses from one place.',
       description: 'Forget spreadsheets and lost receipts: your team records expenses from their phone, you approve them with one click and export reports ready for your accountant.',
       features: [
@@ -240,7 +240,7 @@ export const productosPage = {
     title: 'Software listo para trabajar por ti',
     subtitle: 'Herramientas SaaS diseñadas para la operación diaria de las empresas colombianas. Empieza con la que necesitas hoy y crece con el ecosistema ALMYDEV.',
     seoTitle: 'Productos digitales ALMYDEV | Software empresarial',
-    seoDescription: 'Productos digitales SaaS de ALMYDEV: Control de Gastos disponible ahora; Nómina, Inventarios, Recursos Humanos, Finanzas, CRM y Compras en camino.',
+    seoDescription: 'Productos digitales SaaS de ALMYDEV: Gestión Financiera disponible ahora; Nómina, Inventarios, Recursos Humanos, Finanzas, CRM y Compras en camino.',
     knowMore: 'Conocer más',
     knowLess: 'Ver menos',
     tryNow: 'Probar ahora',
@@ -256,7 +256,7 @@ export const productosPage = {
     title: 'Software ready to work for you',
     subtitle: 'SaaS tools designed for the daily operation of Colombian companies. Start with the one you need today and grow with the ALMYDEV ecosystem.',
     seoTitle: 'ALMYDEV Digital Products | Business software',
-    seoDescription: 'ALMYDEV digital SaaS products: Expense Control available now; Payroll, Inventory, Human Resources, Finance, CRM and Purchasing on the way.',
+    seoDescription: 'ALMYDEV digital SaaS products: Financial Management available now; Payroll, Inventory, Human Resources, Finance, CRM and Purchasing on the way.',
     knowMore: 'Learn more',
     knowLess: 'Show less',
     tryNow: 'Try it now',

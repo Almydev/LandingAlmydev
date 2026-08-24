@@ -36,7 +36,7 @@ function Art({ children }) {
 }
 
 const arts = {
-  'control-gastos': (
+  'gestion-financiera': (
     <g strokeLinecap="round" strokeLinejoin="round">
       <path
         d="M158 58h84a8 8 0 018 8v116l-16-10-15 10-15-10-15 10-15-10-16 10V66a8 8 0 018-8z"

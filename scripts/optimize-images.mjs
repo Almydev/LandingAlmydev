@@ -7,7 +7,7 @@ const inputs = [
   { src: 'src/assets/banner.png', dest: 'src/assets/banner.webp', width: 1600 },
   { src: 'src/assets/faviconbg.png', dest: 'public/faviconbg-256.png', width: 256 },
   { src: 'src/assets/faviconbg.png', dest: 'public/faviconbg-64.png', width: 64 },
-  { src: 'src/assets/productos/control-gastos.png', dest: 'public/img/productos/control-gastos.webp', width: 800 },
+  { src: 'src/assets/productos/gestion-financiera.png', dest: 'public/img/productos/gestion-financiera.webp', width: 800 },
   { src: 'src/assets/productos/nomina.png', dest: 'public/img/productos/nomina.webp', width: 800 },
   { src: 'src/assets/productos/inventarios.png', dest: 'public/img/productos/inventarios.webp', width: 800 },
   { src: 'src/assets/productos/recursos-humanos.png', dest: 'public/img/productos/recursos-humanos.webp', width: 800 },
