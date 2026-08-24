@@ -2,7 +2,7 @@ export const PRODUCTS = [
   {
     slug: 'gestion-financiera',
     status: 'available',
-    url: 'https://saasgestionfinanciera.vercel.app',
+    url: 'https://gestionfinanciera.almydev.com',
     es: {
       name: 'Gestión Financiera',
       tagline: 'Registra, aprueba y exporta los gastos de tu empresa desde un solo lugar.',
