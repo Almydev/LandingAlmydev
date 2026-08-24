@@ -10,13 +10,13 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.links}>
           <h4 className={styles.heading}>{t.footer.nav}</h4>
-          <Link to="/productos" className={styles.link}>{t.footer.products}</Link>
           <a href="#problema" className={styles.link}>{t.nav.problema}</a>
           <a href="#solucion" className={styles.link}>{t.nav.solucion}</a>
           <a href="#capacidades" className={styles.link}>{t.nav.capacidades}</a>
           <a href="#areas" className={styles.link}>{t.nav.areas}</a>
           <a href="#filosofia" className={styles.link}>{t.nav.filosofia}</a>
           <a href="#contacto" className={styles.link}>{t.nav.contacto}</a>
+          <Link to="/productos" className={`${styles.link} ${styles.productsLink}`}>{t.footer.products}</Link>
         </div>
 
         <div className={styles.links}>

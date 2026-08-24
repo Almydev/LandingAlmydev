@@ -36,6 +36,15 @@
   color: var(--text-primary);
 }
 
+.productsLink {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+.productsLink:hover {
+  color: var(--accent);
+}
+
 .linkRow {
   display: flex;
   align-items: center;
