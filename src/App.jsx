@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ConsentBanner from './components/ConsentBanner/ConsentBanner'
 import LegalPage from './pages/legal/LegalPage'
+import Productos from './pages/productos/Productos'
 
 function Landing() {
   return (
@@ -30,6 +31,19 @@ function Landing() {
         <TechStack />
         <Philosophy />
         <Contact />
+      </main>
+      <Footer />
+      <ConsentBanner />
+    </>
+  )
+}
+
+function ProductosPage() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Productos />
       </main>
       <Footer />
       <ConsentBanner />
@@ -57,6 +71,7 @@ function App() {
         <Route path="/privacidad" element={<Legal docKey="privacy" />} />
         <Route path="/terminos" element={<Legal docKey="terms" />} />
         <Route path="/cookies" element={<Legal docKey="cookies" />} />
+        <Route path="/productos" element={<ProductosPage />} />
         <Route path="*" element={<Landing />} />
       </Routes>
     </>

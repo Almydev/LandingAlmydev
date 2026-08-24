@@ -23,6 +23,7 @@ export default function Header() {
     { href: '#problema', label: t.nav.problema },
     { href: '#solucion', label: t.nav.solucion },
     { href: '#capacidades', label: t.nav.capacidades },
+    { href: '/productos', label: t.nav.productos, route: true },
     { href: '#areas', label: t.nav.areas },
     { href: '#filosofia', label: t.nav.filosofia },
     { href: '#contacto', label: t.nav.contacto },
@@ -37,7 +38,12 @@ export default function Header() {
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map((l) => (
-            <Link key={l.href} to={onHome ? l.href : `/${l.href}`} className={styles.link} onClick={() => setMenuOpen(false)}>
+            <Link
+              key={l.href}
+              to={l.route ? l.href : onHome ? l.href : `/${l.href}`}
+              className={`${styles.link} ${l.route && location.pathname.startsWith(l.href) ? styles.linkActive : ''}`}
+              onClick={() => setMenuOpen(false)}
+            >
               {l.label}
             </Link>
           ))}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useI18n } from '../../context/I18nContext.jsx'
 import styles from './Footer.module.css'
 
@@ -9,6 +10,7 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.links}>
           <h4 className={styles.heading}>{t.footer.nav}</h4>
+          <Link to="/productos" className={styles.link}>{t.footer.products}</Link>
           <a href="#problema" className={styles.link}>{t.nav.problema}</a>
           <a href="#solucion" className={styles.link}>{t.nav.solucion}</a>
           <a href="#capacidades" className={styles.link}>{t.nav.capacidades}</a>

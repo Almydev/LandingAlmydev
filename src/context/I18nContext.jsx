@@ -4,7 +4,7 @@ const I18nContext = createContext()
 
 const translations = {
   es: {
-    nav: { problema: 'Problema', solucion: 'Solución', capacidades: 'Capacidades', areas: 'Áreas', filosofia: 'Filosofía', contacto: 'Contacto' },
+    nav: { problema: 'Problema', solucion: 'Solución', capacidades: 'Capacidades', productos: 'Productos', areas: 'Áreas', filosofia: 'Filosofía', contacto: 'Contacto' },
     hero: {title: 'Transformamos procesos fragmentados en', highlight: 'ecosistemas inteligentes', subtitle: 'Información que fluye · Procesos conectados · Empresas que crecen', cta: 'Conoce más', cta2: 'Nuestras capacidades' },
     problem: { label: 'El desafío', title: 'Cuando la información deja de fluir', desc: 'Las organizaciones modernas generan grandes cantidades de información, pero gran parte permanece distribuida, fragmentada y desconectada. Esta fragmentación limita el crecimiento.' },
     problemCards: [
@@ -53,7 +53,7 @@ const translations = {
     philosophy: { label: 'Filosofía', quote1: 'La tecnología no debe añadir complejidad.', quote2: 'Debe eliminarla.', text: 'Creemos que los procesos eficientes nacen cuando la información fluye con claridad entre las personas, los sistemas y las decisiones. Por ello diseñamos soluciones que simplifican operaciones, integran información y potencian el crecimiento organizacional.', motto: 'La información correcta debe llegar a la persona correcta, en el momento correcto.' },
     values: ['PRECISIÓN', 'INTEGRACIÓN', 'TRAZABILIDAD', 'ESCALABILIDAD', 'INNOVACIÓN'],
     contact: { label: 'Contacto', title: 'Hablemos', desc: 'Cuéntanos sobre tu proyecto y te responderemos en breve.', name: 'Nombre', email: 'Correo electrónico', message: 'Mensaje', send: 'Enviar mensaje', sending: 'Enviando...', sent: '¡Mensaje enviado!', error: 'Ocurrió un error. Intenta de nuevo.', consent: 'He leído y acepto la Política de Privacidad y Tratamiento de Datos', privacy: 'Política de Privacidad', consentError: 'Debes aceptar la Política de Privacidad para continuar.' },
-    footer: { nav: 'Navegación', connect: 'Conectemos', evolution: 'Evolución', rights: 'Todos los derechos reservados.' },
+    footer: { nav: 'Navegación', connect: 'Conectemos', evolution: 'Evolución', rights: 'Todos los derechos reservados.', products: 'Productos digitales' },
     footerEvolution: ['Desarrollo de Software Empresarial', 'Automatización de Procesos', 'Integración de Información', 'Consultoría Tecnológica'],
     theme: { light: 'Modo claro', dark: 'Modo oscuro' },
     lang: { es: 'Español', en: 'Inglés' },
@@ -61,7 +61,7 @@ const translations = {
     consent: { aria: 'Aviso de preferencias de almacenamiento', text: 'Este sitio utiliza almacenamiento local en tu navegador para recordar tus preferencias de idioma y tema visual. No utilizamos cookies de seguimiento.', more: 'Más información', accept: 'Aceptar', reject: 'Rechazar' },
   },
   en: {
-    nav: { problema: 'Problem', solucion: 'Solution', capacidades: 'Capabilities', areas: 'Areas', filosofia: 'Philosophy', contacto: 'Contact' },
+    nav: { problema: 'Problem', solucion: 'Solution', capacidades: 'Capabilities', productos: 'Products', areas: 'Areas', filosofia: 'Philosophy', contacto: 'Contact' },
     hero: { badge: 'ALMYDEV', title: 'We turn fragmented processes into', highlight: 'intelligent ecosystems', subtitle: 'Information that flows · Connected processes · Companies that grow', cta: 'Learn more', cta2: 'Our capabilities' },
     problem: { label: 'The challenge', title: 'When information stops flowing', desc: 'Modern organizations generate large amounts of information, but much of it remains distributed, fragmented, and disconnected. This fragmentation limits growth.' },
     problemCards: [
@@ -110,7 +110,7 @@ const translations = {
     philosophy: { label: 'Philosophy', quote1: 'Technology should not add complexity.', quote2: 'It should eliminate it.', text: 'We believe that efficient processes are born when information flows clearly between people, systems, and decisions. That is why we design solutions that simplify operations, integrate information, and boost organizational growth.', motto: 'The right information must reach the right person, at the right time.' },
     values: ['PRECISION', 'INTEGRATION', 'TRACEABILITY', 'SCALABILITY', 'INNOVATION'],
     contact: { label: 'Contact', title: 'Let\'s talk', desc: 'Tell us about your project and we\'ll get back to you shortly.', name: 'Name', email: 'Email', message: 'Message', send: 'Send message', sending: 'Sending...', sent: 'Message sent!', error: 'Something went wrong. Try again.', consent: 'I have read and accept the Privacy and Personal Data Processing Policy', privacy: 'Privacy Policy', consentError: 'You must accept the Privacy Policy to continue.' },
-    footer: { nav: 'Navigation', connect: 'Let\'s connect', evolution: 'Evolution', rights: 'All rights reserved.' },
+    footer: { nav: 'Navigation', connect: 'Let\'s connect', evolution: 'Evolution', rights: 'All rights reserved.', products: 'Digital products' },
     footerEvolution: ['Enterprise Software Development', 'Process Automation', 'Information Integration', 'Technology Consulting'],
     theme: { light: 'Light mode', dark: 'Dark mode' },
     lang: { es: 'Spanish', en: 'English' },

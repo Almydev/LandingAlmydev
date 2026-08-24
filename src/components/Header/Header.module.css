@@ -54,6 +54,14 @@
   color: var(--text-primary);
 }
 
+.linkActive {
+  color: var(--accent);
+}
+
+.linkActive:hover {
+  color: var(--accent);
+}
+
 .right {
   display: flex;
   align-items: center;
